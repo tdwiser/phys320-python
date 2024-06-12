@@ -9,8 +9,13 @@ Installation
 
 3. Using a terminal (on Windows, a Conda terminal) navigate to the directory with the downloaded or `git clone`d code. Create a conda environment with `conda env create -f environment.yml`. This will download and install several Python packages and might take a bit.
 
+4. (optional) Install Visual Studio Code with Python and Jupyter extensions for code and notebook editing.
+
 Use
 ===
 
-Whenever you open a new terminal you'll need to activate the appropriate Python environment with `conda activate phys320`. To open a JupyterLab interface, run `jupyter lab`.
+Whenever you open a new terminal you'll need to activate the appropriate Python environment with `conda activate phys320`.
+To open a JupyterLab interface in the browser, run `jupyter lab`.
+In VSCode, you can select the `phys320` conda environment using the command "Python: Select Interpreter..." or "Notebook: Select Kernel..." for notebooks.
+You may also need "Jupyter: Select Interpreter to Start Notebook Server..." depending on your installation.
 
