@@ -13,3 +13,5 @@ dependencies:
   - ipywidgets
   - pyvisa-py
   - zeroconf
+  - notebook
+
