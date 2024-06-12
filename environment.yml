@@ -1,0 +1,15 @@
+name: phys320
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - matplotlib
+  - scipy
+  - ipympl
+  - numpy
+  - pyvisa
+  - jupyterlab
+  - python=3.12
+  - ipywidgets
+  - pyvisa-py
+  - zeroconf
