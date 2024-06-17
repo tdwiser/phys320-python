@@ -11,7 +11,5 @@ dependencies:
   - jupyterlab
   - python=3.12
   - ipywidgets
-  - pyvisa-py
   - zeroconf
   - notebook
-

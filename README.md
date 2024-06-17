@@ -3,13 +3,15 @@ This repository contains Python code for interfacing with equipment in PHYS 320 
 Installation
 ============
 
+1. Install [NI-VISA](https://www.ni.com/en/support/downloads/drivers/download.ni-visa.html) for your operating system.
+
 1. Install the `conda` package manager on your system via [either Miniconda or Miniforge](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) or, on macOS/Linux, your favorite package manager. For macOS I recommend [Homebrew](https://brew.sh).
 
-2. Download the contents of this repository using `git clone https://github.com/tdwiser/phys320-python` or the GitHub web interface. (Windows users will have to install `git` first to use the clone option, but downloading updates will be as easy as `git pull`.)
+1. Download the contents of this repository using `git clone https://github.com/tdwiser/phys320-python` or the GitHub web interface. (Windows users will have to install `git` first to use the clone option, but downloading updates will be as easy as `git pull`.)
 
-3. Using a terminal (on Windows, a Conda terminal) navigate to the directory with the downloaded or `git clone`d code. Create a conda environment with `conda env create -f environment.yml`. This will download and install several Python packages and might take a bit.
+1. Using a terminal (on Windows, a Conda terminal) navigate to the directory with the downloaded or `git clone`d code. Create a conda environment with `conda env create -f environment.yml`. This will download and install several Python packages and might take a bit.
 
-4. (optional) Install Visual Studio Code with Python and Jupyter extensions for code and notebook editing.
+1. (optional) Install Visual Studio Code with Python and Jupyter extensions for code and notebook editing.
 
 Use
 ===
@@ -19,3 +21,9 @@ To open a JupyterLab interface in the browser, run `jupyter lab`.
 In VSCode, you can select the `phys320` conda environment using the command "Python: Select Interpreter..." or "Notebook: Select Kernel..." for notebooks.
 You may also need "Jupyter: Select Interpreter to Start Notebook Server..." depending on your installation.
 
+References
+==========
+
+1. [Tektronix Programming Manual][tek-prog-manual]
+
+[tek-prog-manual]: https://www.tek.com/en/oscilloscope/tds210-manual/tds200-tds1000-tds2000-tds1000b-tds2000b-and-tps2000-programmer
