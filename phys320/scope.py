@@ -210,18 +210,17 @@ def curve(channelA: ChannelLike, channelB: Optional[ChannelLike] = None) -> pd.D
         channels = [ch(channelA), ch(channelB)]
     else:
         channels = [ch(channelA)]
-    header = WFMP(_inst.query("WFMP?"))    
-    t = header.t_series()
     y = []
     for channel in channels:
         _inst.write(f"DATa:SOUrce {channel}")
+        header = WFMP(_inst.query("WFMP?"))    
         curv = _inst.query_binary_values("CURV?",'b')
         y.append(header.y_scale(curv))
+    t = header.t_series()
     data = {"t": t, ch(channelA): y[0]}
     if(channelB): data[ch(channelB)] = y[1]
     df = pd.DataFrame(data)
     return df
-
 
 def peek(channel: ChannelLike = Channel.CH1, ax: Optional[mplAxes] = None) -> (mplFigure | None):
     """Helper function to get a quick plot of a channel e.g.~scope.peek(2) to see CH2.
