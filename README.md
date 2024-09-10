@@ -7,11 +7,11 @@ Installation
 
 1. Install the `conda` package manager on your system via [either Miniconda or Miniforge](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) or, on macOS/Linux, your favorite package manager. For macOS I recommend [Homebrew](https://brew.sh).
 
-1. Download the contents of this repository using `git clone https://github.com/tdwiser/phys320-python` or the GitHub web interface. (Windows users will have to install `git` first to use the clone option, but downloading updates will be as easy as `git pull`.)
+1. Install [Visual Studio Code](https://code.visualstudio.com/download), then use the Extension Manager to install the official Microsoft-provided Python and Jupyter extensions for code and notebook editing. 
+
+1. Download the contents of this repository using `git clone https://github.com/tdwiser/phys320-python` or the Visual Studio interface ("Clone Git Repository..."). (Windows users may have to install `git` first to use the clone option, but downloading updates will be as easy as `git pull`.)
 
 1. Using a terminal (on Windows, a Conda terminal) navigate to the directory with the downloaded or `git clone`d code. Create a conda environment with `conda env create -f environment.yml`. This will download and install several Python packages and might take a bit.
-
-1. (optional) Install Visual Studio Code with Python and Jupyter extensions for code and notebook editing.
 
 Use
 ===

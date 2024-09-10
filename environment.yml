@@ -13,3 +13,4 @@ dependencies:
   - ipywidgets
   - zeroconf
   - notebook
+  - pandas
