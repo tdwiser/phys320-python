@@ -1,8 +1,8 @@
 name: phys320
 channels:
   - conda-forge
-  - defaults
 dependencies:
+  - llvm-openmp<=20.1.8
   - matplotlib
   - scipy
   - ipympl
